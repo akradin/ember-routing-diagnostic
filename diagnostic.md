@@ -6,21 +6,23 @@ Record your responses inside the fenced code blocks below each question.
     and what are the main task(s) you perform inside an Ember Route?
 
     ```md
-    <!-- your response here -->
+    Inside the emper application router is where you find our routes. So, this
+    is where we would find `/lists/` or the path to go to a single list. Inside
+    an ember route would be what the view state would actuall change to
     ```
 
 1.  What is the command to generate a route named `boston` nested under
     `campus`?
 
-    ```md
-    <!-- your response here -->
+    ```sh
+    ember g route campus/boston
     ```
 
 1.  Suppose you have a nested route at the URL `/campus/boston`. How would you
     use the `link-to` helper to generate an appropriate link?
 
-    ```md
-    <!-- your response here -->
+    ```html
+    {{#link-to 'boston'}}Boston{{/link-to}}
     ```
 
 1.  Explain **at least** two differences between the following two route
@@ -35,7 +37,9 @@ Record your responses inside the fenced code blocks below each question.
     ```
 
     ```md
-    <!-- your response here -->
+    The first one is a nested route, so you get to it from the `products` page.
+    I am pretty sure both will get you to the same place, but the starting place
+    is different.
     ```
 
 1.  Suppose we have the following route definition:
@@ -48,11 +52,14 @@ Record your responses inside the fenced code blocks below each question.
     value `'123'` inside a Route?
 
     ```md
-    <!-- your response here -->
+    Not sure what is meant by referencing the value. If you mean how do we get
+    to the data about `/movies/123` other than manually typing it into the url
+    window then I think you just an action inside the model that says to show
+    the component that contains movie data.
     ```
 
 1.  Inside a template, how do we reference data provided by a Route?
 
     ```md
-    <!-- your response here -->
+    We use the model it correlates with.
     ```
